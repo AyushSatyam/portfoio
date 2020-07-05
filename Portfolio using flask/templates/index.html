@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ayush</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/index.css') }}"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript"
+    src="{{ url_for('static', filename='index.js') }}"></script>
+  </head>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="50" style="position: relative;">
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-2 col-3 container-fluid" id="myScrollspy">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <div class="circular--landscape">
+                <img src="{{url_for('static', filename='potrait.jpg')}}" class="img-fluid mx-auto rounded-circle ">
+                
+             </div>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">Projects</a>
+            </li>
+            <li class="nav-item">
+              <div class="row">
+                <a href="https://www.facebook.com/ayush.kasera.7777/" class="fa fa-facebook nav-link"></a>
+                <a href="#" class="fa fa-twitter nav-link"></a>
+                <a href="#" class="fa fa-google nav-link"></a>
+                <a href="https://www.linkedin.com/in/ayush-kasera-a3946a153/" class="fa fa-linkedin nav-link"></a>
+                <!-- <a href="#" class="fa fa-instagram nav-link"></a> -->
+              </div>
+            </li>
+          </ul>
+          
+        </nav>
+        <div class="col-sm-10 col-9">
+          <div id="section1"  class="container-fluid">
+            <div class="card bg-light text-white">     
+              <img class="img-fluid card-img" height="100%" style="max-width:100%" src="{{url_for('static', filename='backgroud_image.jpg')}}"/>
+              <div class="card-img-overlay text-center">
+                <h1 style="color: white;">Hi!</h1>
+                <h1 style="color: white;">I'm Ayush</h1>
+                <h3>
+                <a href="" class="typewrite" style="color: white; text-decoration: none;" data-period="2000" data-type='[ "I am Full-Stack Developer", "I am Android Developer", "I Love Data Science", "I Love to Develop." ]'>
+                  <span class="wrap"></span>
+                </a>
+              </h3><br>
+              <a href="/return-files/" target="blank">
+                <button type="button"class="btn btn-outline-light">Download Resume <span class="glyphicon glyphicon-menu-right"></span></button>
+              </a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div id="section2" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+            <h1>WHO AM I?</h1>
+            <p>Hello, my name is Ayush Kasera. I am a Computer Science Engineer.I have completed my
+              graduation from Cochin University of Science and Technology. I am very passionate.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime minima aut vitae, libero reprehenderit sed repudiandae beatae pariatur expedita necessitatibus molestias soluta, sapiente mollitia modi et? Deleniti, qui? Consectetur.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, placeat laboriosam, fugit tempore qui, vitae illo dolorum officia sunt nesciunt deserunt et dolorem! Animi dignissimos omnis, aliquid placeat quod natus.
+              Provident fuga, nisi rem repudiandae neque voluptatum error recusandae, praesentium asperiores, voluptatibus tempore fugit nesciunt accusamus esse quis nam vitae. Aperiam, autem explicabo. In minus animi, molestias doloremque soluta neque!
+              Voluptas nobis iste quis temporibus amet sapiente consequatur consectetur beatae, reprehenderit necessitatibus aliquid? Repellat blanditiis amet perferendis ipsa, possimus velit corporis architecto expedita beatae assumenda quasi illo, magni ex sed!
+            </p>
+          </div>
+          <hr>
+          <div id="section3" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+            <h1>Education</h1>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div><!-- section3 end -->
+           <hr>
+           <div id="section4" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+            <h1>Projects</h1>
+            <div class="row" style="margin-top: 20px;">
+              <div class="container">
+                <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+              <div class="container">
+                <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hello World</div>
+                </div>
+              </div>
+          </div>
+          <div class="row" style="margin-top: 20px;">
+            <div class="container">
+              <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+            </div>
+            <div class="container">
+              <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+          <div class="container">
+            <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+      </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>
+</html>
