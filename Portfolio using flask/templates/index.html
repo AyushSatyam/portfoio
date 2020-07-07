@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript"
     src="{{ url_for('static', filename='index.js') }}"></script>
+    <!--Chat bot integration-->
+    <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="05099190-d5e1-4b60-8bcd-fb53997f8371" ></script>
+    
   </head>
   <body data-spy="scroll" data-target="#myScrollspy" data-offset="50" style="position: relative;">
 
@@ -44,6 +47,24 @@
               <a class="nav-link" href="#section4">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#section5">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section6">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section7">Certification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section8">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section9">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section10">Contact</a>
+            </li>
+            <li class="nav-item">
               <div class="row">
                 <a href="https://www.facebook.com/ayush.kasera.7777/" class="fa fa-facebook nav-link"></a>
                 <a href="#" class="fa fa-twitter nav-link"></a>
@@ -56,23 +77,22 @@
           
         </nav>
         <div class="col-sm-10 col-9">
-          <div id="section1"  class="container-fluid">
-            <div class="card bg-light text-white">     
-              <img class="img-fluid card-img" height="100%" style="max-width:100%" src="{{url_for('static', filename='backgroud_image.jpg')}}"/>
-              <div class="card-img-overlay text-center">
+          <div id="section1">
+            <div id="section1_parallax" >
+              <div style="background-color:transparent;font-size:25px;color: #f7f7f7; padding: 250px;" class="text-center">
                 <h1 style="color: white;">Hi!</h1>
                 <h1 style="color: white;">I'm Ayush</h1>
                 <h3>
                 <a href="" class="typewrite" style="color: white; text-decoration: none;" data-period="2000" data-type='[ "I am Full-Stack Developer", "I am Android Developer", "I Love Data Science", "I Love to Develop." ]'>
                   <span class="wrap"></span>
                 </a>
-              </h3><br>
-              <a href="/return-files/" target="blank">
-                <button type="button"class="btn btn-outline-light">Download Resume <span class="glyphicon glyphicon-menu-right"></span></button>
-              </a>
+                </h3><br>
+                <a href="/resume/" target="blank">
+                  <button type="button"class="btn btn-outline-light">Download Resume <span class="glyphicon glyphicon-menu-right"></span></button>
+                </a>
               </div>
-            </div>
-          </div>
+              </div>
+          </div><!--End of section 1-->
           <hr>
           <div id="section2" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
             <h1>WHO AM I?</h1>
@@ -85,7 +105,7 @@
               Provident fuga, nisi rem repudiandae neque voluptatum error recusandae, praesentium asperiores, voluptatibus tempore fugit nesciunt accusamus esse quis nam vitae. Aperiam, autem explicabo. In minus animi, molestias doloremque soluta neque!
               Voluptas nobis iste quis temporibus amet sapiente consequatur consectetur beatae, reprehenderit necessitatibus aliquid? Repellat blanditiis amet perferendis ipsa, possimus velit corporis architecto expedita beatae assumenda quasi illo, magni ex sed!
             </p>
-          </div>
+          </div><!--End of section 2-->
           <hr>
           <div id="section3" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
             <h1>Education</h1>
@@ -140,13 +160,13 @@
             <h1>Projects</h1>
             <div class="row" style="margin-top: 20px;">
               <div class="container">
-                <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+                <img src="{{url_for('static', filename='backgroud_image.jpg')}}" alt="Avatar" class="image">
                 <div class="overlay">
                   <div class="text">Hello World</div>
                 </div>
               </div>
               <div class="container">
-                <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+                <img src="{{url_for('static', filename='backgroud_image.jpg')}}" alt="Avatar" class="image">
                 <div class="overlay">
                   <div class="text">Hello World</div>
                 </div>
@@ -154,13 +174,13 @@
           </div>
           <div class="row" style="margin-top: 20px;">
             <div class="container">
-              <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+              <img src="{{url_for('static', filename='backgroud_image.jpg')}}" alt="Avatar" class="image">
               <div class="overlay">
                 <div class="text">Hello World</div>
               </div>
             </div>
             <div class="container">
-              <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+              <img src="{{url_for('static', filename='backgroud_image.jpg')}}" alt="Avatar" class="image">
               <div class="overlay">
                 <div class="text">Hello World</div>
               </div>
@@ -168,26 +188,241 @@
         </div>
         <div class="row" style="margin-top: 20px;">
           <div class="container">
-            <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+            <img src="{{url_for('static', filename='backgroud_image.jpg')}}" alt="Avatar" class="image">
             <div class="overlay">
               <div class="text">Hello World</div>
             </div>
           </div>
           <div class="container">
-            <img src="{{url_for('static', filename='blockchain_project.jpg')}}" alt="Avatar" class="image">
+            <img src="{{url_for('static', filename='backgroud_image.jpg')}}" alt="Avatar" class="image">
             <div class="overlay">
               <div class="text">Hello World</div>
             </div>
           </div>
       </div>
-            
+          </div><!--End of section 4-->
+          <hr>
+      <div id="section5" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+        <h1>Blogs</h1>
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+              <div class="card-deck">
+                <div class="card">
+                  <img src="{{url_for('static', filename='backgroud_image.jpg')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="{{url_for('static', filename='backgroud_image.jpg')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="{{url_for('static', filename='backgroud_image.jpg')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <div class="card-deck">
+                <div class="card">
+                  <img src="{{url_for('static', filename='backgroud_image.jpg')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="{{url_for('static', filename='backgroud_image.jpg')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="{{url_for('static', filename='backgroud_image.jpg')}}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div><!--End of section 5-->
+      <div style="padding-top:70px; padding-bottom:70px">
+        
+        <div class="parallax">
+          <div style="background-color:transparent;font-size:25px;color: whitesmoke; padding: 120px;" class="text-center">
+            <div class="row">
+              <div class="col-4 text-left">
+                
+                <p class="count" data-value="200" >200</p>
+                <p>Project</p>
+              </div>
+              <div class="col-4">
+                <p class="counter-count" data-to="100" data-speed="1500">879</p>
+                <p>Internship</p>
+              </div>
+              <div class="col-4 text-right">
+                <p class="counter-count" data-to="100" data-speed="1500">879</p>
+                <p>Organization</p>
+              </div>
+            </div>
+            </div>
+          </div><!--End of parallax-->
+
+      </div>
+      <hr>
+      <div id="section6" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+        <h1>Work Experience</h1>
+        <div class="timeline">
+          
+          <div class="right" id="timeline-id">
+            <div class="content">
+              <h2>2016</h2>
+              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+          
+          <div class="right" id="timeline-id">
+            <div class="content">
+              <h2>2012</h2>
+              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
+          </div>
+          
+          <div class="right" id="timeline-id">
+            <div class="content">
+              <h2>2007</h2>
+              <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div><!--End of section 6-->
+      <hr>
+      <div id="section7" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+        <h1>WHO AM I?</h1>
+        <p>Hello, my name is Ayush Kasera. I am a Computer Science Engineer.I have completed my
+          graduation from Cochin University of Science and Technology. I am very passionate.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime minima aut vitae, libero reprehenderit sed repudiandae beatae pariatur expedita necessitatibus molestias soluta, sapiente mollitia modi et? Deleniti, qui? Consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, placeat laboriosam, fugit tempore qui, vitae illo dolorum officia sunt nesciunt deserunt et dolorem! Animi dignissimos omnis, aliquid placeat quod natus.
+          Provident fuga, nisi rem repudiandae neque voluptatum error recusandae, praesentium asperiores, voluptatibus tempore fugit nesciunt accusamus esse quis nam vitae. Aperiam, autem explicabo. In minus animi, molestias doloremque soluta neque!
+          Voluptas nobis iste quis temporibus amet sapiente consequatur consectetur beatae, reprehenderit necessitatibus aliquid? Repellat blanditiis amet perferendis ipsa, possimus velit corporis architecto expedita beatae assumenda quasi illo, magni ex sed!
+        </p>
+      </div><!--End of section 7-->
+      <hr>
+      <div id="section8" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+        <h1>WHO AM I?</h1>
+        <p>Hello, my name is Ayush Kasera. I am a Computer Science Engineer.I have completed my
+          graduation from Cochin University of Science and Technology. I am very passionate.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime minima aut vitae, libero reprehenderit sed repudiandae beatae pariatur expedita necessitatibus molestias soluta, sapiente mollitia modi et? Deleniti, qui? Consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, placeat laboriosam, fugit tempore qui, vitae illo dolorum officia sunt nesciunt deserunt et dolorem! Animi dignissimos omnis, aliquid placeat quod natus.
+          Provident fuga, nisi rem repudiandae neque voluptatum error recusandae, praesentium asperiores, voluptatibus tempore fugit nesciunt accusamus esse quis nam vitae. Aperiam, autem explicabo. In minus animi, molestias doloremque soluta neque!
+          Voluptas nobis iste quis temporibus amet sapiente consequatur consectetur beatae, reprehenderit necessitatibus aliquid? Repellat blanditiis amet perferendis ipsa, possimus velit corporis architecto expedita beatae assumenda quasi illo, magni ex sed!
+        </p>
+      </div><!--End of section 8-->
+      <hr>
+      <div id="section9" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+        <h1>WHO AM I?</h1>
+        <p>Hello, my name is Ayush Kasera. I am a Computer Science Engineer.I have completed my
+          graduation from Cochin University of Science and Technology. I am very passionate.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maxime minima aut vitae, libero reprehenderit sed repudiandae beatae pariatur expedita necessitatibus molestias soluta, sapiente mollitia modi et? Deleniti, qui? Consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, placeat laboriosam, fugit tempore qui, vitae illo dolorum officia sunt nesciunt deserunt et dolorem! Animi dignissimos omnis, aliquid placeat quod natus.
+          Provident fuga, nisi rem repudiandae neque voluptatum error recusandae, praesentium asperiores, voluptatibus tempore fugit nesciunt accusamus esse quis nam vitae. Aperiam, autem explicabo. In minus animi, molestias doloremque soluta neque!
+          Voluptas nobis iste quis temporibus amet sapiente consequatur consectetur beatae, reprehenderit necessitatibus aliquid? Repellat blanditiis amet perferendis ipsa, possimus velit corporis architecto expedita beatae assumenda quasi illo, magni ex sed!
+        </p>
+      </div><!--End of section 9-->
+      <hr>
+      <div id="section10" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+        <h1>Contact Details</h1>
+        <div>
+          <div class="row">
+            <div class="col-3">
+              <div class="text-center" style="background-color: whitesmoke;">
+                <a href="#" class="fa fa-google-plus"></a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div style="padding-top: 10px;">
+                <a href="" style="text-decoration: none;">07ayushkasera@gmail.com</a>
+              </div>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-3">
+              <div class="text-center" style="background-color: whitesmoke;">
+                <a href="#" class="fa fa-map"></a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div style="padding-top: 10px;">
+                <a href="" style="text-decoration: none;">Balrampur, Uttar Pradesh</a>
+              </div>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-3">
+              <div class="text-center" style="background-color: whitesmoke;">
+                <a href="#" class="fa fa-github"></a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div style="padding-top: 10px;">
+                <a href="" style="text-decoration: none;">www.github.com/AyushSatyam</a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-3">
+              <div class="text-center" style="background-color: whitesmoke;">
+                <a href="#" class="fa fa-linkedin"></a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div style="padding-top: 10px;">
+                <a href="" style="text-decoration: none;">www.linkedin.com/in/ayush-kasera-a3946a153/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--End of section 10-->
+        </div><!--End of main body container-->
+      </div><!--End of row container-->
+    </div><!--End of full container-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>

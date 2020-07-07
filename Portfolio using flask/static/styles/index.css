@@ -71,11 +71,105 @@ nav {
 }
 
 .fa {
-  padding: 15px;
-  font-size: 50px;
+  padding: 20px;
+  font-size: 100px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
   border-color: black;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../backgroud_image.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section1_parallax {
+  /* The image used */
+  background-image: url("../backgroud_image.jpg");
+
+  /* Set a specific height */
+  min-height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: rgb(233, 232, 232);
+  top: 0;
+  bottom: 0;
+}
+
+/* Container around content */
+#timeline-id {
+  padding: 10px 40px;
+  position: relative;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+/* The circles on the timeline */
+#timeline-id::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(201, 199, 199);
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -10px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 6px;
 }
